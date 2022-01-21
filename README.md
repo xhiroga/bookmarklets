@@ -2,6 +2,8 @@
 
 [@xhiroga](https://twitter.com/xhiroga)'s bookmarklets.
 
+[Visit site](https://xhiroga.github.io/bookmarklets/).
+
 
 ## References and Inspirations
 
