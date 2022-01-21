@@ -5,21 +5,33 @@
   <title>hiroga's bookmarklets</title>
 </head>
 
+
 <body>
   <h1>
     hiroga's bookmarklets
   </h1>
+
   <p>
     Please copy & paste prefer link to your bookmark bar.
   </p>
-  <ul>
-    <li>
-      <a
-        href="javascript:(undefined => {window.open(`https://twitter.com/search?q=${document.location.href}&src=typed_query&f=live`);})();void(0);">
-        Search Tweets
-      </a>
-    </li>
-  </ul>
+  <main aria-label="Content">
+    <div>
+      <ul>
+        <li>
+          <a
+            href="javascript:(() => {const d=document,s=d.createElement('script');s.src='https://www.zotero.org/bookmarklet/loader.js';(d.body?d.body:d.documentElement).appendChild(s)})();void(0);">
+            Save to Zotero
+          </a>
+        </li>
+        <li>
+          <a
+            href="javascript:(() => {window.open(`https://twitter.com/search?q=${document.location.href}&src=typed_query&f=live`);})();void(0);">
+            Search Tweets
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
 </body>
 
 </html>
