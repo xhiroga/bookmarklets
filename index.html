@@ -28,7 +28,8 @@
             const passwordListHandler = document.querySelector(`body > settings-ui`).shadowRoot.querySelector(`#main`).shadowRoot.querySelector(`settings-basic-page`).shadowRoot.querySelector(`#basicPage > settings-section.expanded > settings-autofill-page`).shadowRoot.querySelector(`#passwordSection`).shadowRoot.querySelector(`#passwordsListHandler`);
             const passwordListItems = passwordListHandler.querySelector(`div > div.cr-separators.list-with-header`).getElementsByTagName(`password-list-item`);
             Array.prototype.forEach.call(passwordListItems, passwordListItem =>{
-              passwordListItem.shadowRoot.querySelector(`#moreActionsButton`).click();passwordListHandler.shadowRoot.querySelector(`#menuRemovePassword`).click();
+              passwordListItem.shadowRoot.querySelector(`#moreActionsButton`).click();
+              passwordListHandler.shadowRoot.querySelector(`#menuRemovePassword`).click();
             });
           })();void(0);">
             Remove Passwords saved in Google Chrome
