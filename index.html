@@ -24,6 +24,18 @@
           </a>
         </li>
         <li>
+          <a href="javascript:(() => {
+            const passwordListHandler = document.querySelector("body > settings-ui").shadowRoot.querySelector("#main").shadowRoot.querySelector("settings-basic-page").shadowRoot.querySelector("#basicPage > settings-section.expanded > settings-autofill-page").shadowRoot.querySelector("#passwordSection").shadowRoot.querySelector("#passwordsListHandler")
+            const passwordListItems = passwordListHandler.querySelector("div > div.cr-separators.list-with-header").getElementsByTagName("password-list-item");
+            Array.prototype.forEach.call(passwordListItems, passwordListItem => {
+              passwordListItem.shadowRoot.querySelector("#moreActionsButton").click();
+              passwordListHandler.shadowRoot.querySelector("#menuRemovePassword").click();
+            });
+          })();void(0);">
+            Remove Passwords saved in Google Chrome
+          </a>
+        </li>
+        <li>
           <a
             href="javascript:(() => {const d=document,s=d.createElement('script');s.src='https://www.zotero.org/bookmarklet/loader.js';(d.body?d.body:d.documentElement).appendChild(s)})();void(0);">
             Save to Zotero
