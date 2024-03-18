@@ -49,18 +49,6 @@
         </li>
         <li>
           <a
-            href="javascript:(() => {window.open(`https://www.connectedpapers.com/search?q=${document.title}`);})();void(0);">
-            Open in Connected Papers
-          </a>
-        </li>
-        <li>
-          <a
-            href="javascript:(() => {const d=document,s=d.createElement('script');s.src='https://www.zotero.org/bookmarklet/loader.js';(d.body?d.body:d.documentElement).appendChild(s)})();void(0);">
-            Save to Zotero
-          </a>
-        </li>
-        <li>
-          <a
             href="javascript:(() => {
               try {
                 const url = document.location.href;
@@ -76,7 +64,19 @@
                 alert('Failed to find a valid paper ID in the URL.');
               }
             })();void(0);">
-            Search on HuggingFace Papers
+            Open in HuggingFace Papers
+          </a>
+        </li>
+        <li>
+          <a
+            href="javascript:(() => {const d=document,s=d.createElement('script');s.src='https://www.zotero.org/bookmarklet/loader.js';(d.body?d.body:d.documentElement).appendChild(s)})();void(0);">
+            Save to Zotero
+          </a>
+        </li>
+        <li>
+          <a
+            href="javascript:(() => {window.open(`https://www.connectedpapers.com/search?q=${document.title}`);})();void(0);">
+            Search on Connected Papers
           </a>
         </li>
         <li>
