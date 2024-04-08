@@ -32,13 +32,39 @@
               passwordListHandler.shadowRoot.querySelector(`#menuRemovePassword`).click();
             });
           })();void(0);">
-            Remove Saved Passwords
+          Remove Saved Passwords
           </a> in <a href="chrome://settings/passwords">Google Chrome Settings</a>
         </li>
         <li>
           <a
             href="javascript:(() => {const u=window.location.pathname.substring(1);window.location.href='https://github.com/search?q=is%3Apublic+author%3A'+u+'+-user%3A'+u;})();void(0);">
             GitHub Contribution
+          </a>
+        </li>
+        <li>
+          <a
+            href="javascript:(() => {window.open(document.location.href.replace('arxiv.org', 'ar5iv.org'));})();void(0);">
+            🖥️ in ar5iv
+          </a>
+        </li>
+        <li>
+          <a
+            href="javascript:(() => {
+              try {
+                const url = document.location.href;
+                const match = url.match(/(\d+\.\d+)/);
+                if (match && match[0]) {
+                  const paperId = match[0];
+                  window.open(`https://huggingface.co/papers/${paperId}`);
+                } else {
+                  throw new Error('Paper ID not found in URL');
+                }
+              } catch (e) {
+                console.error('Error:', e.message);
+                alert('Failed to find a valid paper ID in the URL.');
+              }
+            })();void(0);">
+            🖥️ in 🤗 Papers
           </a>
         </li>
         <li>
@@ -50,19 +76,19 @@
         <li>
           <a
             href="javascript:(() => {window.open(`https://www.connectedpapers.com/search?q=${document.title}`);})();void(0);">
-            Search on Connected Papers
+            🔍 on Connected Papers
+          </a>
+        </li>
+        <li>
+          <a
+            href="javascript:(() => {window.open(`https://paperswithcode.com/search?q=${document.title}`);})();void(0);">
+            🔍 on Papers With Code
           </a>
         </li>
         <li>
           <a
             href="javascript:(() => {window.open(`https://twitter.com/search?q=${document.location.href}&src=typed_query&f=live`);})();void(0);">
-            Search on Twitter
-          </a>
-        </li>
-        <li>
-          <a
-            href="javascript:(() => {window.open(document.location.href.replace('arxiv.org', 'ar5iv.org'));})();void(0);">
-            See on ar5iv
+            🔍 Tweets
           </a>
         </li>
         <li>
