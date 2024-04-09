@@ -101,10 +101,42 @@
         </li>
         <li>
           <a href="javascript:(() => {
-            const selectedText = window.getSelection().toString();
+            const selectedText = window.getSelection().toString().trim();
             window.open(`https://www.etymonline.com/word/${encodeURIComponent(selectedText)}`);
           })();void(0);">
             Etymonline
+          </a>
+        </li>
+        <li>
+          <a href="javascript:(() => {
+            const selectedText = window.getSelection().toString().trim();
+            window.open(`https://forvo.com/word/${encodeURIComponent(selectedText)}/#en`);
+          })();void(0);">
+            forvo
+          </a>
+        </li>
+        <li>
+          <a href="javascript:(() => {
+            const selectedText = window.getSelection().toString().trim();
+            window.open(`https://www.merriam-webster.com/dictionary/${encodeURIComponent(selectedText)}`);
+          })();void(0);">
+            Merriam-Webster
+          </a>
+        </li>
+        <li>
+          <a href="javascript:(() => {
+            const selectedText = window.getSelection().toString().trim();
+            window.open(`https://subdict.org/Dictionary/${encodeURIComponent(selectedText)}`);
+          })();void(0);">
+            SubDict
+          </a>
+        </li>
+        <li>
+          <a href="javascript:(() => {
+            const selectedText = window.getSelection().toString().trim();
+            window.open(`https://en.wiktionary.org/wiki/${encodeURIComponent(selectedText)}`);
+          })();void(0);">
+            Wiktionary
           </a>
         </li>
       </ul>
