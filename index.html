@@ -118,6 +118,15 @@
         <li>
           <a href="javascript:(() => {
             const selectedText = window.getSelection().toString().trim();
+            window.open(`https://www.immersionkit.com/dictionary?keyword=${encodeURIComponent(selectedText)}`);
+          })();void(0);">
+            Immersion Kit
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:(() => {
+            const selectedText = window.getSelection().toString().trim();
             window.open(`https://www.merriam-webster.com/dictionary/${encodeURIComponent(selectedText)}`);
           })();void(0);">
             Merriam-Webster
