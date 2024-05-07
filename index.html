@@ -24,6 +24,28 @@
           </a>
         </li>
         <li>
+          <a href="javascript:(function () {
+            const mainElement = document.querySelector('main');
+            if (mainElement) {
+              const buttons = mainElement.querySelectorAll(`div[role='button'][aria-expanded='false']`);
+              buttons.forEach(button => button.click());
+            }
+          })();">
+            Open Notion subtask's toggles
+          </a>
+        </li>
+        <li>
+          <a href="javascript:(function () {
+            const mainElement = document.querySelector('main');
+            if (mainElement) {
+              const buttons = mainElement.querySelectorAll(`div[role='button'][aria-expanded='true']`);
+              buttons.forEach(button => button.click());
+            }
+          })();">
+            Close Notion subtask's toggles
+          </a>
+        </li>
+        <li>
           <a href="javascript:(() => {
             const passwordListHandler = document.querySelector(`body > settings-ui`).shadowRoot.querySelector(`#main`).shadowRoot.querySelector(`settings-basic-page`).shadowRoot.querySelector(`#basicPage > settings-section.expanded > settings-autofill-page`).shadowRoot.querySelector(`#passwordSection`).shadowRoot.querySelector(`#passwordsListHandler`);
             const passwordListItems = passwordListHandler.querySelector(`div > div.cr-separators.list-with-header`).getElementsByTagName(`password-list-item`);
